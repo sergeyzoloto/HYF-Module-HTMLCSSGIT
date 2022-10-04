@@ -1,0 +1,21 @@
+question: "How do I create a hidden file or folder? How do I display it in the CLI?"
+answer:
+  touch .hidden_file
+  ls -al
+
+question: "How do I create multiple nested directories?"
+answer:
+  -p flag with mkrdir is used to create intermediate directories as required.
+  For example, command:
+  mkrdir -p root/'nested 1' root/'nested 2' root\ 2/nested\ 1
+  creates two root directories with nested ones while their names contain spaces.
+
+question: "How do I append a message to a file, without a newline character, so the output would be:
+first message
+second message
+?"
+answer:
+  "To add multiple lines to a file with echo, use the -e option and separate each line with \n.
+  When you use the -e option, it tells echo to evaluate backslash characters such as \n for new line."
+  So the answer is:
+  echo -e "first message\nsecond message" >> multiple_lines.txt
