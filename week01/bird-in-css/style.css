@@ -1,0 +1,45 @@
+body {
+  background-color: lightskyblue;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.black {
+  background-color: black;
+  border-radius: 100px 100px 0 0;
+  display: block;
+  width: 45%;
+  height: 70%;
+  left: 20%;
+  bottom: 0%;
+  position: fixed;
+}
+
+.white {
+  position: relative;
+  left: 45%;
+  top: 30%;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+}
+
+.yellow {
+  position: relative;
+  left: 100%;
+  top: 20%;
+  height: 0px;
+  width: 0px;
+  border-top: 100px solid transparent;
+  border-left: 100px solid yellow;
+  border-bottom: 100px solid transparent;
+}
