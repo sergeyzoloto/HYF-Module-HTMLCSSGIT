@@ -1,0 +1,114 @@
+* {
+  margin: 3px 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: scale-down;
+  width: 100%;
+  max-height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body,
+section {
+  margin: 10px;
+}
+
+.flexbox-item,
+.grid-item {
+  max-width: 1fr;
+  max-height: 1fr;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+.flexbox-list,
+.grid-list {
+  gap: 20px;  /* Probably padding will be a better option.
+}
+*/
+
+.grid-list {
+  display: grid;
+  padding: 10px 20px;
+
+  background-color: rgb(157, 172, 240);
+}
+
+.flexbox-list {
+  display: flex;
+  flex-wrap: wrap;
+  block-size: auto;
+  padding: 10px 20px;
+
+  background-color: rgb(200, 157, 240);
+}
+
+@media screen and (min-width: 600px) {
+  .flexbox-item:nth-child(1) {
+    flex: 1 1 50%;
+  }
+
+  .flexbox-item:nth-child(2) {
+    flex: 1 1 50%;
+  }
+
+  .flexbox-item {
+    flex: 1 1 33%;
+  }
+
+  .grid-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .grid-item:nth-child(1) {
+    grid-column: 1 / span 6;
+  }
+
+  .grid-item:nth-child(2) {
+    grid-column: 7 / span 6;
+  }
+
+  .grid-item {
+    grid-column: auto / span 4;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flexbox-item:nth-child(1) {
+    flex: 1 1 50%;
+  }
+
+  .flexbox-item:nth-child(2) {
+    flex: 1 1 25%;
+  }
+
+  .flexbox-item {
+    flex: 0 1 25%;
+  }
+
+  .grid-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .grid-item:nth-child(1) {
+    grid-column: 1 / span 6;
+  }
+
+  .grid-item:nth-child(2) {
+    grid-column: 7 / span 3;
+  }
+
+  .grid-item {
+    grid-column: auto / span 3;
+  }
+}
