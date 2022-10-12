@@ -17,10 +17,6 @@ body {
   margin: 0;
 }
 
-div {
-  display: block;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -321,7 +317,6 @@ form {
   grid-column: 1 / span 12;
   margin-top: 48px;
   text-align: left;
-  margin-bottom: 24px;
   float: right;
 }
 
@@ -355,6 +350,72 @@ form {
   justify-content: center;
   width: 50px;
   margin-right: 12px;
+}
+
+.divider {
+  margin-top: 48px;
+  border-bottom: 1px solid #374661;
+  content: '';
+  width: 100%;
+}
+
+.bottom {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  line-height: 26px;
+  grid-column: 1 / span 12;
+}
+
+.footer-bottom-text {
+  color: #a5afbd;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 24px;
+}
+
+.language-selector {
+  padding: 0;
+  margin-left: 0;
+  margin-right: auto;
+  width: fit-content;
+  color: #fff;
+  background-color: #00112c;
+  border: none;
+  font-weight: 600;
+  align-items: center;
+
+  display: flex;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.globe-icon {
+  vertical-align: sub;
+  margin-right: 12px;
+}
+
+.chevron-icon {
+  margin-left: 6px;
+  transition: transform 0.3s;
+  vertical-align: middle;
+}
+
+.bottom-line {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: left;
+  align-items: flex-start;
+  margin-top: 24px;
+}
+
+.bottom-line a,
+.bottom-line span {
+  color: #a5afbd !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
 }
 
 /* Responsive */
