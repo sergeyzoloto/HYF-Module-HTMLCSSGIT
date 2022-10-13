@@ -430,11 +430,19 @@ directly next to the each other, for the :checked rule to work.*/
 }
 
 .image-full {
-  max-width: auto;
   display: block;
   border-radius: 6px;
   margin: 24px 0;
   box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.image-side {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  object-position: center center;
+  display: block;
 }
 
 .container-background {
@@ -447,6 +455,20 @@ directly next to the each other, for the :checked rule to work.*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.half {
+  grid-column: auto / span 12;
+}
+
+.image-container {
+  width: calc(100% + 24px);
+  margin-top: 24px;
+}
+
+.padding-large {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 /* Logo bar */
@@ -748,6 +770,27 @@ form {
   .align-center {
     width: 66.67%;
     margin: auto;
+  }
+
+  .image-full {
+    margin: 96px 0 24px;
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .half {
+    grid-column: auto / span 6;
+  }
+
+  .image-container {
+    position: relative;
+    height: calc(100% + (2 * 96px));
+    width: calc((100vw - 100vw) / 2 + 100% - 24px);
+    left: 48px;
+    top: -96px;
+  }
+
+  .padding-large {
+    margin: 96px 0;
   }
 }
 
