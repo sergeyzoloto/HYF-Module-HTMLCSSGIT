@@ -467,8 +467,7 @@ directly next to the each other, for the :checked rule to work.*/
 }
 
 .padding-large {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  margin-top: 48px;
 }
 
 /* Logo bar */
@@ -787,6 +786,7 @@ form {
     width: calc((100vw - 100vw) / 2 + 100% - 24px);
     left: 48px;
     top: -96px;
+    margin-top: 0;
   }
 
   .padding-large {
