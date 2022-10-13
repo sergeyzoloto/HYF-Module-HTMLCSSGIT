@@ -64,7 +64,6 @@ a {
   border-bottom: 1px solid #d2dae1;
   content: '';
   width: 100%;
-  margin: 48px 24px 0 24px;
 }
 
 /*
@@ -379,7 +378,7 @@ directly next to the each other, for the :checked rule to work.*/
 }
 
 .video-selfhosted {
-  background-color: black;
+  background-color: white;
   display: block;
   width: 100%;
   object-fit: contain;
@@ -776,8 +775,8 @@ form {
   }
 
   .image-full {
-    margin: 96px 0 24px;
-    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.2) !important;
+    margin: 96px 0 96px;
+    box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.2);
   }
 
   .half {
