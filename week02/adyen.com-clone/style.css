@@ -36,7 +36,7 @@ li {
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p {
@@ -51,6 +51,20 @@ svg {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.divider-dark {
+  border-bottom: 1px solid #374661;
+  content: '';
+  width: 100%;
+  margin: 48px 24px 0 24px;
+}
+
+.divider-light {
+  border-bottom: 1px solid #d2dae1;
+  content: '';
+  width: 100%;
+  margin: 48px 24px 0 24px;
 }
 
 /*
@@ -99,7 +113,7 @@ a {
   padding: 0;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
 }
 
 .logo {
@@ -214,15 +228,6 @@ directly next to the each other, for the :checked rule to work.*/
   transform: rotate(90deg);
   margin-right: 12px;
 }
-
-/*
-.navigation-btns li:nth-child(1),
-.navigation-btns li:nth-child(2) {
-  padding: 12px 0;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-}
-*/
 
 .nav-link {
   text-decoration: none;
@@ -359,6 +364,13 @@ directly next to the each other, for the :checked rule to work.*/
   text-decoration: none;
   margin: 12px 12px 12px 0;
   border-radius: 6px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.column-btn:hover {
+  background-color: #098a3d;
+  border-color: #098a3d;
 }
 
 .video-container {
@@ -371,6 +383,70 @@ directly next to the each other, for the :checked rule to work.*/
   display: block;
   width: 100%;
   object-fit: contain;
+}
+
+.padding-area {
+  padding-top: 48px;
+}
+
+.padding-column {
+  padding-top: 24px;
+}
+
+.column-tag {
+  background-color: rgba(10, 191, 83, 0.12);
+  border-radius: 6px;
+  color: #0abf53;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 6px 12px;
+  width: fit-content;
+}
+
+.tag-center {
+  margin: auto;
+}
+
+.heading-h2plus {
+  font-size: 48px;
+  line-height: 58px;
+  padding-top: 24px;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.link-in-text {
+  color: #0abf53;
+  border: 0;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.link-in-text:hover {
+  text-decoration: none;
+}
+
+.image-full {
+  max-width: auto;
+  display: block;
+  border-radius: 6px;
+  margin: 24px 0;
+  box-shadow: 0 5px 50px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.container-background {
+  width: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(images/white-to-grey-gradient-background.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Logo bar */
@@ -390,6 +466,8 @@ directly next to the each other, for the :checked rule to work.*/
   background-color: #f3f6f9;
   padding-bottom: 24px;
   padding-top: 48px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .grey-area .grid-cell {
@@ -525,13 +603,6 @@ form {
   justify-content: center;
   width: 50px;
   margin-right: 12px;
-}
-
-.divider {
-  border-bottom: 1px solid #374661;
-  content: '';
-  width: 100%;
-  margin: 48px 24px 0 24px;
 }
 
 .bottom {
@@ -672,6 +743,11 @@ form {
   .bottom-line {
     margin-top: 0;
     float: left;
+  }
+
+  .align-center {
+    width: 66.67%;
+    margin: auto;
   }
 }
 
