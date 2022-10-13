@@ -470,6 +470,10 @@ directly next to the each other, for the :checked rule to work.*/
   margin-top: 48px;
 }
 
+.narrow-text {
+  width: 80%;
+}
+
 /* Logo bar */
 
 .logobar {
