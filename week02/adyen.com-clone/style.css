@@ -66,15 +66,6 @@ a {
   width: 100%;
 }
 
-/*
-.wrapper {
-  flex: 1 0 auto;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-*/
-
 .container {
   width: 100%;
   padding-right: 24px;
@@ -130,7 +121,7 @@ a {
   color: #00112c;
   background: transparent;
   display: inline-flex;
-  margin-right: -24px; /* To align with the content edge */
+  margin-right: -24px; /* To align with the video edge */
   cursor: pointer;
 }
 
